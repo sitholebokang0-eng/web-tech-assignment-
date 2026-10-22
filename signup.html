@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2 class="logo">Richfield Connect</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="feed.html">Feed</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="profile.html">Profile</a></li>
+    </ul>
+</nav>
+
+<section class="form-container">
+
+<h1>Sign Up</h1>
+
+<form id="signupForm">
+
+<input type="text" placeholder="Name and Surname" required>
+
+<input type="text" id="student-number" placeholder="Student Number" required>
+
+<select id="campus">
+    <option>Select Campus</option>
+    <option>Johannesburg</option>
+    <option>Pretoria</option>
+    <option>Durban</option>
+    <option>Cape Town</option>
+</select>
+
+<input type="email" id="email" placeholder="Email Address" required>
+
+<input type="password" id="password" placeholder="Password" required>
+
+<input type="password" id="confirm-password" placeholder="Confirm Password" required>
+
+
+<div class="form-group">
+    <h3>Interests</h3>
+    <p>Select the topics you are interested in.</p>
+
+    <label class="interest-option">
+        <input type="checkbox" name="interests" value="Coding">
+        <span>Coding</span>
+    </label>
+
+    <label class="interest-option">
+        <input type="checkbox" name="interests" value="Networking">
+        <span>Networking</span>
+    </label>
+
+    <label class="interest-option">
+        <input type="checkbox" name="interests" value="Cyber Security">
+        <span>Cyber Security</span>
+    </label>
+</div>
+
+<div class="form-group">
+    <label for="bio">Short Bio</label>
+    <textarea id="bio" name="bio" rows="4"
+        placeholder="Tell us a little about yourself..."></textarea>
+</div>
+
+<div class="form-group">
+    <label class="terms-label">
+        <input type="checkbox" name="terms" required>
+        I accept the Terms and Conditions
+    </label>
+</div>
+
+<button type="submit" class="btn">Create Account</button>
+
+</form>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,335 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Richfield Colour Scheme */
+:root {
+    --richfield-blue: #003E7E;
+    --richfield-light: #EAF2FB;
+    --white: #FFFFFF;
+    --grey: #666666;
+    --light-grey: #F5F5F5;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-grey);
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+    margin-bottom: 15px;
+    color: var(--richfield-blue);
+    text-align: left;
+}
+
+nav {
+    background-color: var(--richfield-blue);
+    padding: 15px 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav .logo {
+    color: var(--white);
+    margin-bottom: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a,
+nav a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--richfield-light);
+}
+
+/* Main Content */
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+section {
+    width: 100%;
+    margin: 25px 0;
+    text-align: left;
+}
+
+section h1,
+section h2,
+section h3,
+section p {
+    text-align: left;
+}
+
+/* Paragraphs and Lists */
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+/* Cards */
+.card {
+    display: block;
+    width: 100%;
+    background-color: var(--white);
+    border-left: 5px solid var(--richfield-blue);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* General Content Layout */
+.container {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 25px 0;
+    text-align: left;
+}
+
+.item {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* About Page Layout Fix */
+.about-section {
+    display: block;
+    width: 100%;
+    margin: 25px 0;
+    text-align: left;
+}
+
+.about-section h2,
+.about-section h3 {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.about-section p {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    line-height: 1.8;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+.about-section ul {
+    display: block;
+    width: 100%;
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+.about-section li {
+    margin-bottom: 5px;
+}
+
+/* About Page: Stack Information Under Headings */
+.about-section .container {
+    display: block;
+    width: 100%;
+}
+
+.about-section .item {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Benefits of Joining */
+.about-section h2 + p {
+    margin-top: 0;
+}
+
+/* Buttons */
+.btn,
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--richfield-blue);
+    color: var(--white);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Forms */
+form {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input,
+textarea,
+select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--richfield-blue);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 62, 126, 0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .item {
+        width: 100%;
+        flex: 1 1 auto;
+    }
+
+    .about-section {
+        width: 100%;
+    }
+
+    .about-section .container {
+        display: block;
+    }
+
+    .about-section .item {
+        width: 100%;
+    }
+
+    .btn {
+        max-width: 100%;
+    }
+}
+
+/* Sign Up Form Interests */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group h3 {
+    margin-bottom: 5px;
+}
+
+.form-group p {
+    color: var(--grey);
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    margin-bottom: 10px;
+}
+
+.form-group .interest-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: var(--white);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-group .interest-option input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.form-group .interest-option:hover {
+    border-color: var(--richfield-blue);
+}
+
+.form-group textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.form-group .terms-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-group .terms-label input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+.profile-picture {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}

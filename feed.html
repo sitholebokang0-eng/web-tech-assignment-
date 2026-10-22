@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2 class="logo">Richfield Connect</h2>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="feed.html">Feed</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="profile.html">Profile</a></li>
+    </ul>
+</nav>
+
+<section class="container" id="feedContainer">
+
+<h1>Student Activity Feed</h1>
+
+<div class="post">
+    <h3>John Smith</h3>
+    <small>10 March 2026</small>
+    <p>Completed my Database Systems assignment today.</p>
+</div>
+
+<div class="post">
+    <h3>Sarah Daniels</h3>
+    <small>12 March 2026</small>
+    <p>Looking for members to join our study group.</p>
+</div>
+
+<div class="post">
+    <h3>Michael Brown</h3>
+    <small>15 March 2026</small>
+    <p>Just attended an exciting programming workshop.</p>
+</div>
+
+<div class="post">
+    <h3>Jessica Mokoena</h3>
+    <small>16 March 2026</small>
+    <p>
+        Excited to start my Web Development project.
+        Looking for team members interested in HTML, CSS and JavaScript.
+    </p>
+</div>
+
+<div class="post">
+    <h3>David Nkosi</h3>
+    <small>18 March 2026</small>
+    <p>
+        The networking practical was very informative.
+        I learned more about LAN, WAN and network security.
+    </p>
+</div>
+
+<div class="post">
+    <h3>Amanda Jacobs</h3>
+    <small>19 March 2026</small>
+    <p>
+        Reminder: The Database Systems assignment is due next week.
+        Good luck everyone.
+    </p>
+</div>
+
+<div class="post">
+    <h3>Peter Williams</h3>
+    <small>20 March 2026</small>
+    <p>
+        Just joined the Cyber Security Club and looking
+        forward to learning more about digital safety.
+    </p>
+</div>
+
+<h2>Trending Topics</h2>
+
+<ul>
+    <li>Web Development Assignment</li>
+    <li>Database Systems Project</li>
+    <li>Cyber Security Awareness</li>
+    <li>Career Development Workshops</li>
+    <li>Study Group Discussions</li>
+</ul>
+
+<br>
+
+
+<h2>Create Post</h2>
+
+<form id="postForm">
+    <label for="postContent">What's on your mind?</label>
+
+    <textarea
+        id="postContent"
+        rows="5"
+        placeholder="Share something with fellow students..."
+        required
+    ></textarea>
+
+    <button type="submit" class="btn">Post</button>
+
+    <p id="postMessage" role="status"></p>
+</form>
+
+<div id ="newPosts"></div>
+
+<script src="script.js"></script>
+</section>
+
+</body>
+</html>
